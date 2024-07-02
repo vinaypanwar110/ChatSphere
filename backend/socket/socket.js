@@ -14,6 +14,10 @@ const io = new Server(server, {
   },
 });
 
+export const getReceiverSocketId = (receiverId) => {
+  return userSocketMap[receiverId];
+}
+
 const userSocketMap = {}; // user ids
 io.on("connection", (socket) => {
   // console.log("a user connect", socket.id);
