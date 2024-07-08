@@ -11,5 +11,10 @@ export default defineConfig({
         target:"http://localhost:5000",
       }
     }
+  },
+  build: {
+    chunkSizeWarningLimit: 1500, // Adjust limit to 1000 kB
   }
 })
+
+
